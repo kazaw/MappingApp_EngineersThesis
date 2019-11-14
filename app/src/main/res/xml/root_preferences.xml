@@ -16,35 +16,39 @@
 
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory app:title="@string/settings_header">
 
         <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
+            app:key="diameter"
+            app:title="@string/diameter_title"
+            app:defaultValue="300"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="offsetX"
+            app:title="@string/offsetX_title"
+            app:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="offsetY"
+            app:title="@string/offsetY_title"
+            app:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="startingDelay"
+            app:title="@string/startingDelay"
+            app:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="samplingFrequency"
+            app:title="@string/samplingFrequency"
+            app:defaultValue="200"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="inactivityTimeLimit"
+            app:title="@string/inactivityTimeLimit"
+            app:defaultValue="30000"
             app:useSimpleSummaryProvider="true" />
 
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory app:title="@string/sync_header">
-
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
 
     </PreferenceCategory>
 
