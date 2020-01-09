@@ -9,13 +9,16 @@
     <string name="title_activity_settings">Settings</string>
 
     <!-- Preference Titles -->
-    <string name="diameter_title">Diameter (mm)</string>
+    <string name="diameter_title">Diameter (cm)</string>
     <string name="settings_header">Settings</string>
-    <string name="offsetX_title">Offset X (mm)</string>
-    <string name="offsetY_title">Offset  (mm)</string>
+    <string name="offsetX_title">Offset X (cm)</string>
+    <string name="offsetY_title">Offset Y(cm)</string>
     <string name="startingDelay">Starting Delay (ms)</string>
     <string name="samplingFrequency">Sampling Frequency (ms)</string>
     <string name="inactivityTimeLimit">Inactivity Time Limit (ms)</string>
+    <string name="roomWidth">Room Width (cm)</string>
+    <string name="roomLength">Room Length (cm)</string>
+    <string name="speed">Speed (cm/s)</string>
     <!-- Messages Preferences -->
 
     <!-- Sync Preferences -->
