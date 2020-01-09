@@ -123,6 +123,7 @@ class MappingService : Service(), SensorEventListener {
             val time = String.format("%02d:%02d:%02d:%02d", (seconds / 3600) ,(seconds % 3600) / 60, (seconds % 60), ((millis % 1000 )/ 10))
             val intent = Intent("MAPPER_UPDATED")
             intent.putExtra("time", time)
+            intent.putExtra("filename", filename)
             intent.putExtra("AccX", String.format("%.2f",linearAcceleration[0]))
             intent.putExtra("AccY", String.format("%.2f",linearAcceleration[1]))
             intent.putExtra("AccZ", String.format("%.2f",linearAcceleration[2]))
