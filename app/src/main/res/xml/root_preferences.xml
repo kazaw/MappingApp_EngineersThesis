@@ -21,7 +21,12 @@
         <EditTextPreference
             app:key="diameter"
             app:title="@string/diameter_title"
-            app:defaultValue="300"
+            app:defaultValue="30"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="speed"
+            app:title="@string/speed"
+            app:defaultValue="20"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
             app:key="offsetX"
@@ -47,6 +52,16 @@
             app:key="inactivityTimeLimit"
             app:title="@string/inactivityTimeLimit"
             app:defaultValue="30000"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="roomWidth"
+            app:title="@string/roomWidth"
+            app:defaultValue="1000"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="roomLength"
+            app:title="@string/roomLength"
+            app:defaultValue="500"
             app:useSimpleSummaryProvider="true" />
 
 
